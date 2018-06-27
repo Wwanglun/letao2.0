@@ -31,7 +31,7 @@ if(location.href.indexOf('login.html') === -1) {
 
   // 点击显示模态框
   $('.logOut').click(function () {
-    $('.modal').modal('show')
+    $('#loginOut').modal('show')
   })
 
   // 退出登录
@@ -44,6 +44,7 @@ if(location.href.indexOf('login.html') === -1) {
         console.log(info);
         if(info.success === true) {
           location.href = 'login.html'
+          //$('#loginOut').modal('hide')
         }
       }
     })

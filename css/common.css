@@ -147,4 +147,9 @@ ul .category a {
   height: 400px;
 }
 
+.comment-body .container-fluid table th,
+.comment-body .container-fluid table td {
+  text-align: center;
+  vertical-align: middle;
+}
 /*------- 结束 ------*/

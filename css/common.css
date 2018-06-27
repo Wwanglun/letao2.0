@@ -152,4 +152,12 @@ ul .category a {
   text-align: center;
   vertical-align: middle;
 }
+
+.mb_15 {
+  margin-bottom: 15px;
+}
+
+#addOne .form-group {
+  margin: 15px;
+}
 /*------- 结束 ------*/

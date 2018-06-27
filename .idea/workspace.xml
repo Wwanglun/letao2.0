@@ -48,9 +48,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/commont.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/login.html" />
+=======
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/css/common.css" />
+        <option value="$PROJECT_DIR$/js/login.js" />
+>>>>>>> login
       </list>
     </option>
   </component>
@@ -184,7 +190,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+=======
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+>>>>>>> login
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15372425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

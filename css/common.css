@@ -1,0 +1,24 @@
+.mt_150 {
+  margin-top: 150px;
+}
+
+
+.lg_b {
+  background-color: #222D32;
+}
+
+.panel.panel-primary {
+  padding: 0;
+}
+.container .panel-heading {
+  height: 60px;
+}
+
+.panel-heading h3 {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.panel-body .form-group .col-sm-3 {
+  padding-top: 7px;
+}

@@ -2,7 +2,6 @@
   margin-top: 150px;
 }
 
-
 .lg_b {
   background-color: #222D32;
 }
@@ -22,3 +21,130 @@
 .panel-body .form-group .col-sm-3 {
   padding-top: 7px;
 }
+
+/*-------  公共部分管理模块开始 ------*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+.lt-index {
+  height: 100%;
+  padding-left: 180px;
+  transition: padding-left .5s;
+}
+.lt-index.current {
+  padding-left: 0px;
+}
+.index-admin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  z-index: 999;
+  background-color: #000;
+  transition: left .5s;
+}
+.index-admin.current {
+  left: -180px;
+}
+.index-comment {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+
+}
+.index-comment .comment-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding-left: 180px;
+  background-color: #3C8DBC;
+  transition: padding-left .5s;
+}
+.index-comment .comment-head.current {
+  padding-left: 0px;
+}
+.index-admin h3 {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background-color: #367FA9;
+}
+.index-admin .pic {
+  padding-top: 30px;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+}
+.pic img {
+  border-radius: 50%;
+}
+.pic p {
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.index-admin ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.index-admin ul a {
+  display: block;
+  border-left: 3px solid transparent;
+  padding-left: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-align: left;
+}
+.index-admin ul a.active {
+  border-color: #fff;
+  background-color: #1D1F21
+}
+.index-admin ul i {
+  margin-right: 5px;
+}
+ul .category a {
+  padding-left: 60px;
+}
+
+.comment-head a {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.comment-nav {
+  padding-top: 20px;
+}
+
+.red {
+  color: #A94442;
+}
+/*------- 结束 ------*/
+
+/*-------  首页内容开始 ------*/
+.index-echart > div {
+  width: 45%;
+  height: 400px;
+}
+
+/*------- 结束 ------*/

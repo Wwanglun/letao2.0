@@ -2,9 +2,81 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>乐淘--搜索页</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/search.css">
 </head>
 <body>
+<div class="lt">
+  <div class="lt-header">
+    <div class="hearder-left">
+      <a href="javascript:history.go(-1);"><i class="mui-icon mui-icon-back"></i></a>
+    </div>
+    <div class="header-center">
+      <h3>搜索中心</h3>
+    </div>
 
+  </div>
+  <div class="lt-body">
+    <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!--这里放置真实显示的DOM内容-->
+        <div class="lt-search">
+          <input type="text" placeholder="请输入搜索关键字">
+          <button class="mui-btn mui-btn-primary ">搜索</button>
+        </div>
+        <div class="lt-history">
+          <div class="history-header">
+            <span class="mui-pull-left">搜索历史</span>
+            <span class="mui-pull-right clear_btn"><i class="fa fa-trash"></i>清空记录</span>
+          </div>
+          <div class="history-body">
+           <!-- 动态添加数据 -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="lt-footer">
+    <ul class="mui-clearfix">
+      <li><a href="index.html"><i class="fa fa-home"></i><p>首页</p></a></li>
+      <li><a href="category.html"><i class="fa fa-bars"></i><p>分类页</p></a></li>
+      <li><a href="cart.html"><i class="fa fa-shopping-cart"></i><p>购物车</p></a></li>
+      <li><a href="user.html"><i class="fa fa-user"></i><p>会员中心</p></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 历史记录模板 -->
+<script type="text/template" id="tmp">
+  {{ if arr.length === 0}}
+    <p>没有历史记录</p>
+  {{ else if arr.length > 0}}
+  <ul>
+    {{ each arr v i}}
+    <li class="mui-clearfix" data-index="{{ i }}">
+      <a class="mui-pull-left" href="#">{{ v}}</a>
+      <i class="mui-icon mui-icon-closeempty mui-pull-right btn_delete"></i>
+    </li>
+    {{ /each }}
+  </ul>
+  {{ /if }}
+
+
+
+</script>
+
+
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/search.js"></script>
 </body>
 </html>

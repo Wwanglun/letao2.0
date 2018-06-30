@@ -2,9 +2,81 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>乐淘--分类页</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
 </head>
 <body>
+<div class="lt">
+  <div class="lt-header">
+    <div class="hearder-left">
+      <a href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+    <div class="header-center">
+      <h3>乐淘云购</h3>
+    </div>
+    <div class="header-right">
+      <a href="search.html"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+  <div class="lt-body">
+    <div class="cate-left">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
+          <ul class="cateOne">
+            <!-- 动态生成结构 -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cate-right">
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
+          <ul class="mui-clearfix cateTwo">
+            <!-- 动态生成结构 -->
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="lt-footer">
+    <ul class="mui-clearfix">
+      <li><a href="index.html"><i class="fa fa-home"></i><p>首页</p></a></li>
+      <li class="current"><a href="category.html"><i class="fa fa-bars"></i><p>分类页</p></a></li>
+      <li><a href="cart.html"><i class="fa fa-shopping-cart"></i><p>购物车</p></a></li>
+      <li><a href="user.html"><i class="fa fa-user"></i><p>会员中心</p></a></li>
+    </ul>
+  </div>
+</div>
 
+
+  <!-- 一级目录模板 -->
+<script type="text/template" id="tmp">
+  {{ each rows v i}}
+    <li data-id="{{ v.id }}">{{ v.categoryName }}</li>
+  {{ /each }}
+</script>
+
+
+  <!-- 二级目录模板/ -->
+<script type="text/template" id="tpl">
+  {{ if rows.length === 0}}
+  <p>没有数据</p>
+  {{ /if }}
+ {{ each rows v i}}
+ <li><a href="#"><img src="{{v.brandLogo}}" alt=""><p>{{v.brandName}}</p></a></li>
+ {{ /each }}
+</script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/category.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+/*------- 导航栏 开始 ------*/
+.lt-body .cate-left {
+  float: left;
+  width: 90px;
+  height: 100%;
+  position: relative;
+}
+.cate-right {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.lt-body .cate-left li {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #666;
+  background-color: #e3e4e5;
+}
+.lt-body .cate-left li.current {
+  background-color: #fff;
+}
+.cate-right li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 10px;
+}
+.cate-right li img{
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}
+.cateTwo p {
+  padding: 10px;
+}
+/*------- 结束 ------*/

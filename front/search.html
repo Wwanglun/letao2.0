@@ -37,6 +37,7 @@
           </div>
           <div class="history-body">
            <!-- 动态添加数据 -->
+            <div class="loading"></div>
           </div>
         </div>
 
@@ -55,13 +56,14 @@
 
 <!-- 历史记录模板 -->
 <script type="text/template" id="tmp">
+
   {{ if arr.length === 0}}
     <p>没有历史记录</p>
   {{ else if arr.length > 0}}
   <ul>
     {{ each arr v i}}
     <li class="mui-clearfix" data-index="{{ i }}">
-      <a class="mui-pull-left" href="#">{{ v}}</a>
+      <a class="mui-pull-left" href="searchList.html?key={{v}}">{{ v}}</a>
       <i class="mui-icon mui-icon-closeempty mui-pull-right btn_delete"></i>
     </li>
     {{ /each }}

@@ -8,3 +8,15 @@ $(function () {
     indicators: false //是否显示滚动条
   });
 })
+
+function getSrc(name) {
+  var str = decodeURI(location.search).slice(1)
+  var arr = str.split('&')
+  var obj = {}
+  arr.forEach(function (v) {
+    var key = v.split('=')[0]
+    var value = v.split('=')[1]
+    obj[key] = value
+  })
+  return obj[name]
+}
